@@ -7,6 +7,6 @@
 }
 
 .active {
-  background-color: var(--text);
+  background-color: rgb(240 253 244) !important;
   color: var(--textSoft);
 }

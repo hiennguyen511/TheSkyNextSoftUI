@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --bg: white;
-  --bgSoft: #2d2b42;
-  --text: white;
+  --bgSoft: rgb(204 251 241);
+  --text: black;
   --textSoft: black;
   --btn: #3673fd;
 }
@@ -26,18 +27,13 @@ a {
   color: inherit;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
-.content {
-  flex-grow: 1;
-  margin-top: 80px;
-  margin-bottom: 40px;
+.content{
+  padding-top: 80px;
 }
-
 /* @media (max-width: 1536px) {
   .content {
     width: 1366px;
@@ -80,3 +76,19 @@ a {
     width: 380px;
   }
 } */
+.left-40{
+  top: 5rem;
+  left: 25rem;
+}
+
+.imagebg{
+  height: auto;
+  
+}
+.image{
+  width: 100%;
+  height: 170px;
+}
+.swiper-wrapper{
+  padding-bottom: 50px;
+}

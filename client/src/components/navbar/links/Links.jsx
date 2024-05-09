@@ -20,10 +20,10 @@ const Links = () => {
       title: "Blog",
       path: "/blogs",
     },
-    {
-      title: "Contact",
-      path: "/contact",
-    },
+    // {
+    //   title: "Contact",
+    //   path: "/contact",
+    // },
   ];
 
   return (

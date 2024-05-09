@@ -8,11 +8,13 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <footer className={styles.footer}>
+        <div className={styles.footerFix}>
         <div className={styles.footerLeft}>
           <Image
             src="/logo-removebg.png"
             alt="LogoImage"
-            fill
+            width={170}
+            height={170}
             className={styles.img}
           />
           {/* <p>Số 7, Dãy 2, 651 Minh Khai, Hai Bà Trưng, Hà Nội</p> */}
@@ -22,6 +24,8 @@ const Footer = () => {
           <FooterContact />
           <FooterConnect />
         </div>
+        </div>
+        
       </footer>
       <div className={styles.licence}>
         <License />

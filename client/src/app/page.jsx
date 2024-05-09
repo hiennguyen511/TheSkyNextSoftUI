@@ -7,6 +7,8 @@ import { AiTwotoneLike } from "react-icons/ai";
 import { GiMightySpanner } from "react-icons/gi";
 import { SiEsotericsoftware } from "react-icons/si";
 import { FaComputer } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
   const images = [
     "/AnhIT3.jpg",
@@ -26,17 +28,24 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: "ease",
+      once: false,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className={styles.wrap}>
-      <div className={styles.slides}>
-        <div className={styles.image}>
-          <Image
-            src={images[currentSlide]}
-            alt="lo"
-            width={1440}
-            height={720}
-          />
+      <Image src="/it.avif" alt="" width={1200} height={500} className="relative w-full imagebg h-auto "/>
+
+      <div className=" pb-5 absolute top-40 left-40">
+        <div className="flex justify-center flex-wrap" data-aos="fade-right" >
+          <Image src="/logo-removebg.png" alt="" height={500} width={500}/>
         </div>
+        <h1 className="text-green-600 font-bold text-center text-4xl" data-aos="fade-left">SMART - SPEED - STRONG - SECURE</h1>
       </div>
 
       <div className={styles.wrapNoneFlex}>
@@ -75,84 +84,9 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      
 
-      <div className={styles.wrapCl}>
-        <div className={styles.container}>
-          <div className={styles.image2}>
-            <Image src="/AnhIT1.jpg" alt="" width={500} height={400} />
-          </div>
-          <div>
-            <p style={{ color: "#0bbee7", font: "initial", fontSize: "20px" }}>
-              Về chúng tôi
-            </p>
-            <p>
-              Trong nhiều năm làm việc chuyên sâu về ReactJs, đào tạo các nhân
-              sự cho các dự án quy mô quốc tế, React Plus đã xây dựng một khoá
-              học hoàn chỉnh giúp các developer trẻ hoặc sinh viên mới ra trường
-              có cơ hội tiếp cận và có thể bước đầu làm việc với ReactJs & React
-              Native.
-            </p>
-            <ul className={styles.theUl}>
-              <li>Smart</li>
-              <li>Speed</li>
-              <li>Strong</li>
-              <li>Secure</li>
-              <button className={styles.btnmore}>
-                <span>
-                  <Link href="/about">Xem thêm...</Link>
-                </span>
-              </button>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.wrap}>
-        <div className={styles.wrapCl}>
-          <div className={styles.wrapcol}>
-            <Image src="/SuMenh.jpg" alt="" width={334} height={175} />
-            <h2 className={styles.wraph2}>Sứ mệnh</h2>
-            <div className={styles.wrapp}>
-              <p style={{ padding: "10px" }}>
-                Cung cấp chuyên gia về React & React Native Thoả mãn khách
-                hàngvới chất lượng cao nhất. Tạo dựng cộng đồng kỹ sư React lớn
-                nhất tại Việt Nam.
-              </p>
-            </div>
-            <button className={styles.btnmore}>
-              <span>
-                <Link href="/blog">Tìm hiểu thêm</Link>
-              </span>
-            </button>
-          </div>
-          <div className={styles.wrapcol}>
-            <Image src="/GiaTriCotLoi.jpg" alt="" width={334} height={175} />
-            <h2 className={styles.wraph2}>Giá trị cốt lõi</h2>
-            <div className={styles.wrapp}>
-              <p style={{ padding: "10px" }}>
-                Chuyên biệt về React Khả năng tăng trưởng nhanh Chuyên gia thực
-                sự Phải hồi ngay tức thì
-              </p>
-            </div>
-            <button className={styles.btnmore}>
-              <span>
-                <Link href="/blog">Tìm hiểu thêm</Link>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.home4}>
-        <h3>Đối Tác - Khách Hàng</h3>
-        <div>
-          <Image alt="doitac" src="/cong-an.jpg" width={180} height={180} />
-          <Image alt="doitac" src="/mobifone.jpg" width={180} height={180} />
-          <Image alt="doitac" src="/viettel.jpg" width={180} height={180} />
-          <Image alt="doitac" src="/vinaphone.jpg" width={180} height={180} />
-          <Image alt="doitac" src="/vietlott.jpg" width={180} height={180} />
-        </div>
-      </div>
+      
     </div>
   );
 };

@@ -16,10 +16,7 @@
   );
   padding: 40px;
 }
-.container {
-  display: flex;
-  gap: 20px;
-}
+
 
 .image {
   position: relative;

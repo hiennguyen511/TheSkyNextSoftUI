@@ -4,16 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.75;
+  
+  color: #eeeeee;
+    
+ 
 }
-
-.footer {
-  height: 140px;
-  width: 100%;
+.footerFix{
+  width: 80%;
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(105, 99, 99);
+  
+  
+
+}
+
+.footer {
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .footerLeft {
   flex: 1;

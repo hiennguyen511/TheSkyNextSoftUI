@@ -5,13 +5,8 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
-        <Image
-          src="/logo-removebg.png"
-          alt="LogoImage"
-          fill
-          className={styles.img}
-        />
+      <Link href="/" className={styles.logo }>
+        <h2 className="text-green-600 font-semibold">SkyNextSoft</h2>
       </Link>
       <div>
         <Links />

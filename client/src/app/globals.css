@@ -31,9 +31,7 @@ a {
   margin: auto;
 }
 
-.content{
-  padding-top: 80px;
-}
+
 /* @media (max-width: 1536px) {
   .content {
     width: 1366px;
@@ -77,12 +75,12 @@ a {
   }
 } */
 .left-40{
-  top: 5rem;
-  left: 25rem;
+  top: 34rem;
+  left: 20rem;
 }
 
 .imagebg{
-  height: auto;
+  height: 800px;
   
 }
 .image{
@@ -91,4 +89,9 @@ a {
 }
 .swiper-wrapper{
   padding-bottom: 50px;
+}
+.imglogo{
+  width: 45px;
+  height: auto;
+
 }

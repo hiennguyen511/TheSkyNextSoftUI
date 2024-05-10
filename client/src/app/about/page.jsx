@@ -13,6 +13,7 @@ const AboutPage = () => {
   return (
     <div>
       <div className={styles.container}>
+        <div className={styles.null}></div>
         <div className={styles.textContainer}>
           {/* <h2 className={styles.subtitle}> Về chúng tôi</h2> */}
           <h1 className={styles.title}>Skynext Soft</h1>

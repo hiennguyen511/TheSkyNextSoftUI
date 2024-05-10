@@ -3,16 +3,24 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: white;
-  opacity: 0.75;
+  /* background-color: white; */
+  /* opacity: 0.75; */
   position: fixed;
   width: 100%;
   z-index: 1000;
+  color: white;
+  
+}
+.sticky{
+  background-color: white;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1) ;
+  color: var(--textSoft);
 }
 
 .logo {
   font-size: 20px;
+  display: flex;
+  color: white;
   /* margin-left: 10px; */
 }
 

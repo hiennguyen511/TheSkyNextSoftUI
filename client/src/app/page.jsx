@@ -10,23 +10,24 @@ import { FaComputer } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Home = () => {
-  const images = [
-    "/AnhIT3.jpg",
-    "https://pizza-time-with-react.vercel.app/static/media/section-one-1440.bd60dc8a558f85b4ffe7.webp",
-    "https://etsgroup.vn/wp-content/uploads/2022/01/Ets-banner.jpg",
-  ];
+  // const images = [
+  //   "/AnhIT3.jpg",
+  //   "https://pizza-time-with-react.vercel.app/static/media/section-one-1440.bd60dc8a558f85b4ffe7.webp",
+  //   "https://etsgroup.vn/wp-content/uploads/2022/01/Ets-banner.jpg",
+  // ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentSlide((prevSlide) =>
-        prevSlide === images.length - 1 ? 0 : prevSlide + 1
-      );
-    }, 4000);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentSlide((prevSlide) =>
+  //       prevSlide === images.length - 1 ? 0 : prevSlide + 1
+  //     );
+  //   }, 4000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
+  
 
   useEffect(() => {
     AOS.init({
@@ -39,13 +40,11 @@ const Home = () => {
 
   return (
     <div className={styles.wrap}>
-      <Image src="/it.avif" alt="" width={1200} height={500} className="relative w-full imagebg h-auto "/>
+      <Image src="/bg.png" alt="" width={1200} height={500} className="relative w-full imagebg h-auto "/>
 
-      <div className=" pb-5 absolute top-40 left-40">
-        <div className="flex justify-center flex-wrap" data-aos="fade-right" >
-          <Image src="/logo-removebg.png" alt="" height={500} width={500}/>
-        </div>
-        <h1 className="text-green-600 font-bold text-center text-4xl" data-aos="fade-left">SMART - SPEED - STRONG - SECURE</h1>
+      <div className=" pb-5 absolute top-40 left-40" data-aos="fade-down">
+        <p className="text-center text-sky-600 text-4xl pb-5">CODING THE FUTURE</p>
+        <h1 className="text-green-500 font-bold text-center text-5xl" >SMART - SPEED - STRONG - SECURE</h1>
       </div>
 
       <div className={styles.wrapNoneFlex}>

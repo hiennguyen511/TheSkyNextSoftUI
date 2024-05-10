@@ -144,3 +144,8 @@
   flex-direction: column;
   gap: 30px;
 }
+.null{
+  width: 80px;
+  background-color: gray;
+  height: auto;
+}

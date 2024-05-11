@@ -13,6 +13,10 @@ const Links = () => {
       path: "/",
     },
     {
+      title: "Service",
+      path: "/service"
+    },
+    {
       title: "About",
       path: "/about",
     },

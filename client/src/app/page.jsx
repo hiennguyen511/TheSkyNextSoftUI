@@ -4,9 +4,11 @@ import styles from "./home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { AiTwotoneLike } from "react-icons/ai";
-import { GiMightySpanner } from "react-icons/gi";
+import { GiMightySpanner, GiSmart, GiStrong } from "react-icons/gi";
 import { SiEsotericsoftware } from "react-icons/si";
-import { FaComputer } from "react-icons/fa6";
+import { FaComputer} from "react-icons/fa6";
+import { IoSpeedometer } from "react-icons/io5";
+import { GrSecure } from "react-icons/gr";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Home = () => {
@@ -47,7 +49,65 @@ const Home = () => {
         <h1 className="text-green-500 font-bold text-center text-5xl" >SMART - SPEED - STRONG - SECURE</h1>
       </div>
 
-      <div className={styles.wrapNoneFlex}>
+      <div className="py-14 bg-slate-50">
+        <h1 className="pb-4 text-center text-3xl font-semibold">GIÁ TRỊ CỦA CHÚNG TÔI NẰM Ở ĐÂU?</h1>
+        <p className="text-center pb-14">Luôn đưa ra những giải pháp công nghệ tuyệt vời</p>
+        <div className="container">
+          <div className="flex gap-6 ">
+            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9 bg-white hover:shadow-2xl w-1/4" data-aos="fade-right">
+                <div className="text-6xl text-green-500"><GiSmart /></div>
+                <h2 className=" text-lg font-semibold">Smart</h2> 
+                <span className="text-center p-5">Tối ưu nhưng thuật toán đưa ra những sản phẩm với kết quả cao như 
+                  mong muốn và hiệu xuất cao
+                </span>
+            </div>
+            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" data-aos="fade-right">
+                <div className="text-6xl text-green-500"><IoSpeedometer /></div>
+                <h2 className=" text-lg font-semibold">Speed</h2>
+                <p className="text-center p-5">Tốc độ phát triển phần mềm, hiệu suất của phần mềm,
+                 tốc độ triển khai, và khả năng phản hồi của ứng dụng. 
+                </p>
+            </div>
+            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" data-aos="fade-left">
+                <div className="text-6xl text-green-500" ><GiStrong /></div>
+                <h2 className=" text-lg font-semibold ">Strong</h2>
+                <p className="text-center p-5">Các tính năng, thiết kế, hoặc hệ thống mà có độ bền, hiệu suất và độ tin cậy cao
+                </p>
+            </div>
+            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" data-aos="fade-left">
+                <div className="text-6xl text-green-500"><GrSecure /></div>
+                <h2 className=" text-lg font-semibold">Secure</h2>
+                <p className="text-center p-5">Bảo vệ thông tin cá nhân của người dùng, bảo vệ doanh nghiệp khỏi những rủi ro pháp lý và tài chính
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="container">
+         
+          <div className="grid grid-cols-2 gap-5">
+            <div className="col-span-1">
+              <div>
+                <Image src="/software.avif" alt="" width={300} height={200}/>
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      {/* <div className={styles.wrapNoneFlex}>
         <div className={styles.containerCl}>
           <Link href="/contact">
             <div className={styles.tag}>
@@ -83,7 +143,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      
+       */}
 
       
     </div>

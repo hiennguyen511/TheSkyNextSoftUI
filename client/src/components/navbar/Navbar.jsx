@@ -28,7 +28,7 @@ const Navbar = () => {
     <div className={`${styles.container} ${isSticky ? styles.sticky : ''}`}>
       <Link href="/" className= "flex items-center flex-wrap text-2xl">
         <Image src="/logo-removebg - Copy.png" alt="" width={30} height={40} className="imglogo" />
-        <h2 className={` font-semibold ${isSticky ? "text-green-500" : "" }`}>SkyNextSoft</h2>
+        <h2 className={` font-semibold ${isSticky ? "text-green-700" : "" }`}>SkyNextSoft</h2>
       </Link>
       <div>
         <Links />

@@ -33,7 +33,7 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       easing: "ease",
       once: false,
     });
@@ -46,36 +46,36 @@ const Home = () => {
 
       <div className=" pb-5 absolute top-40 left-40" data-aos="fade-down">
         <p className="text-center text-sky-600 text-4xl pb-5">CODING THE FUTURE</p>
-        <h1 className="text-green-500 font-bold text-center text-5xl" >SMART - SPEED - STRONG - SECURE</h1>
+        <h1 className="text-green-700 font-bold text-center text-5xl" >SMART - SPEED - STRONG - SECURE</h1>
       </div>
 
-      <div className="py-14 bg-slate-50">
+      <div className="py-14 background">
         <h1 className="pb-4 text-center text-3xl font-semibold">GIÁ TRỊ CỦA CHÚNG TÔI NẰM Ở ĐÂU?</h1>
-        <p className="text-center pb-14">Luôn đưa ra những giải pháp công nghệ tuyệt vời</p>
-        <div className="container">
+        <p className="text-center pb-14 text-lg font-light italic">Luôn đưa ra những giải pháp công nghệ tuyệt vời</p>
+        <div className="container " data-aos="fade-down">
           <div className="flex gap-6 ">
-            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9 bg-white hover:shadow-2xl w-1/4" data-aos="fade-right">
-                <div className="text-6xl text-green-500"><GiSmart /></div>
+            <div className="column-3 flex items-center flex-col gap-3 shadow-lg p-5 py-9 bg-white hover:shadow-2xl w-1/4" >
+                <div className="text-6xl text-green-700"><GiSmart /></div>
                 <h2 className=" text-lg font-semibold">Smart</h2> 
-                <span className="text-center p-5">Tối ưu nhưng thuật toán đưa ra những sản phẩm với kết quả cao như 
+                <span className="text-center p-5 ">Tối ưu nhưng thuật toán đưa ra những sản phẩm với kết quả cao như 
                   mong muốn và hiệu xuất cao
                 </span>
             </div>
-            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" data-aos="fade-right">
-                <div className="text-6xl text-green-500"><IoSpeedometer /></div>
+            <div className="column-3 flex items-center flex-col gap-3 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" >
+                <div className="text-6xl text-green-700"><IoSpeedometer /></div>
                 <h2 className=" text-lg font-semibold">Speed</h2>
                 <p className="text-center p-5">Tốc độ phát triển phần mềm, hiệu suất của phần mềm,
                  tốc độ triển khai, và khả năng phản hồi của ứng dụng. 
                 </p>
             </div>
-            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" data-aos="fade-left">
-                <div className="text-6xl text-green-500" ><GiStrong /></div>
+            <div className="column-3 flex items-center flex-col gap-3 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" >
+                <div className="text-6xl text-green-700" ><GiStrong /></div>
                 <h2 className=" text-lg font-semibold ">Strong</h2>
                 <p className="text-center p-5">Các tính năng, thiết kế, hoặc hệ thống mà có độ bền, hiệu suất và độ tin cậy cao
                 </p>
             </div>
-            <div className="column-3 flex items-center flex-col gap-4 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" data-aos="fade-left">
-                <div className="text-6xl text-green-500"><GrSecure /></div>
+            <div className="column-3 flex items-center flex-col gap-3 shadow-lg p-5 py-9  bg-white hover:shadow-2xl w-1/4" >
+                <div className="text-6xl text-green-700"><GrSecure /></div>
                 <h2 className=" text-lg font-semibold">Secure</h2>
                 <p className="text-center p-5">Bảo vệ thông tin cá nhân của người dùng, bảo vệ doanh nghiệp khỏi những rủi ro pháp lý và tài chính
                 </p>
@@ -83,25 +83,35 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="background py-14">
         <div className="container">
+        
          
           <div className="grid grid-cols-2 gap-5">
-            <div className="col-span-1">
+          <div className="col-span-1">
               <div>
-                <Image src="/software.avif" alt="" width={300} height={200}/>
-              </div>
-            </div>
-            <div className="col-span-1">
-              <div>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+              <h1 className="pb-3  text-3xl font-semibold text-green-700">SkyNextSoft</h1>
+              <h2 className=" pb-5 text-lg font-light italic">MANG LẠI NHỮNG DỊCH VỤ PHÁT TRIỂN PHẦM MỀM CAO NHẤT</h2>
+                <ul className=" ps-10 mb-5">
+                  <li data-aos="fade-right" data-aos-delay="100" className="border-b mb-2 w-2/4 hover:text-neutral-300">Thiết kế Website
+                  </li>
+                  <li data-aos="fade-right" data-aos-delay="200" className="border-b mb-2 w-2/4 hover:text-neutral-300">Thiết kế hệ thống
+                  </li>
+                  <li data-aos="fade-right" data-aos-delay="300" className="border-b mb-2 w-2/4 hover:text-neutral-300">Giải pháp CNTT
+                  </li>
+                  <li data-aos="fade-right" data-aos-delay="400" className="border-b mb-2 w-2/4 hover:text-neutral-300"> Thiết kế App Mobile
+                  </li>
                 </ul>
+
+              </div>
+              <Link href="" className="px-5 py-3 font-semibold text-white bg-green-700 rounded-3xl border block w-48 hover:opacity-90">Khám phá dịch vụ</Link>
+            </div>
+            <div className="col-span-1" data-aos="fade-left">
+              <div>
+                <Image src="/software.avif" alt="" width={1000} height={1000} className="imagebgg"/>
               </div>
             </div>
+            
           </div>
           
         </div>
